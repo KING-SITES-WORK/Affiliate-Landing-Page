@@ -289,3 +289,63 @@ header{
 /*FIM  Plano1*/
 
 
+/*INICIO Plano2*/
+
+.plano2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.textPlano2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagePlano2{
+    width: 50%;
+    padding-top: 2rem;
+}
+
+.imagePlano2 img{
+    width: 100%;
+}
+
+.textPlano2 h3{
+    font-family: var(--font-padrao);
+    font-weight: bolder;
+    margin: 2rem;
+    color: var(--cor-principal);
+}
+
+.textPlano2 p{
+    font-family: var(--font-padrao);
+    font-size: 1.2rem;
+}
+
+.descricao2{
+    display: flex;
+    align-items: normal;
+    justify-items: center;
+    gap: 1rem;
+}
+.descricao2 i{
+    color: var(--cor-principal);
+} 
+
+.textPlano2 h2{
+    color: var(--cor-principal);
+    font-family: var(--font-destaque);
+    font-weight: bolder;
+    margin: 0 2rem;
+}
+
+.textPlano2 button{
+    margin: 1rem 2rem;
+}
+
+/*FIM Plano2*/
+
