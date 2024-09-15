@@ -4,6 +4,9 @@
 :root{
     --font-destaque: 'Popins', times, sans-serif;
     --font-padrao: 'Roboto', arial;
+
+    --cor-principal: #082DB1;
+    --cor-fundo-claro: #F0F3FA;
 }
 
 
@@ -13,24 +16,25 @@
     box-sizing: border-box;
 }
 
-body{
+header{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/*Inicio Slider*/
 
 .slider{
-    margin: 0 auto;
-    width: 800px;
-    height: 400px;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 
 .slides{
     width: 400%;
-    height: 400px;
+    height: 100vh;
     display: flex;
 }
 .slides input{
@@ -39,18 +43,85 @@ body{
 
 .slide{
     width: 25%;
-    position: relative;
     transition: 2s;
 }
 
 .slide img{
-    width: 800px;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+* Estilizando o texto e o botão sobre as imagens */
+.content {
+    position: absolute; /* Permite que a div fique sobre a imagem */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o conteúdo no slide */
+    color: white;
+    text-align: center;
+    z-index: 2; /* Garante que o conteúdo fique sobre a imagem */
+}
+
+/* Estilizando o texto e o botão sobre as imagens */
+.content {
+    position: absolute; /* Permite que a div fique sobre a imagem */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o conteúdo no slide */
+    color: white;
+    text-align: center;
+    z-index: 2; /* Garante que o conteúdo fique sobre a imagem */
+}
+
+.content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    font-family: var(--font-destaque);
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.082);
+}
+
+.btn-saiba-mais {
+    padding: 5px 30px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    font-family: var(--font-padrao);
+    color: white;
+    background-color: var(--cor-principal);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+}
+
+.btn-saiba-mais:hover {
+    background-color: var(--cor-principal);
+}
+
+/* Estilizando a seta */
+.arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 630px;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 3; /* Fica acima de todos os elementos */
+    rotate: 90deg;
+    animation: move 1.1s infinite ease-in-out;
+}
+
+@keyframes move{
+    0%{margin-bottom: 0;}
+    50%{margin-bottom: 40px;}
+    100%{margin-bottom: 0;}
 }
 
 .manual-navigation{
     position: absolute;
-    width: 800px;
-    margin-top: 350px;
+    width: 100vw;
+    bottom: 20px;
     display: flex;
     justify-content: center;
 }
@@ -72,21 +143,25 @@ body{
 }
 
 #radio1:checked ~ .first{
-    margin-left: 0%;
+    margin-left: 0;
+    transition: none;
 }
 
 #radio2:checked ~ .first{
     margin-left: -25%;
+    transition: margin-left 2s;
 }
 #radio3:checked ~ .first{
     margin-left: -50%;
+    transition: margin-left 2s;
 }
 #radio4:checked ~ .first{
     margin-left: -75%;
+    transition: margin-left 2s;
 }
 
 .navigation-auto div{
-    border: 2px solid #082DB1;
+    border: 2px solid var(--cor-principal);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -95,8 +170,8 @@ body{
 
 .navigation-auto{
     position: absolute;
-    width: 800px;
-    margin-top: 350px;
+    width: 100vw;
+    bottom: 20px;
     display: flex;
     justify-content: center;
 }
@@ -117,3 +192,42 @@ body{
     background: white;
 }
 
+/*Fim Slider*/
+
+/*Inicio Section Start*/
+
+.start{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.box .image img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.box h4{
+    color: var(--cor-principal);
+    font-weight: bolder;
+    text-align: center;
+    font-family: var(--font-padrao);
+}
+
+.box p{
+    text-align: center;
+    font-family: var(--font-padrao);
+    font-size: 1.2rem;
+}
+
+
+/*Fim Section Start*/
