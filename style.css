@@ -286,7 +286,7 @@ header{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .textPlano2{
@@ -298,8 +298,6 @@ header{
 
 .imagePlano2{
     width: 50%;
-    display: flex;
-    
 }
 
 .imagePlano2 img{
@@ -521,3 +519,117 @@ header{
 }
 
 /*FIM Info*/
+
+/*Inicio Footer*/
+.footer{
+    background-color: #79797a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+.footer .itens{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col1{
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: center;
+
+}
+
+.col1 h4{
+    color: white;
+    font-family: var(--font-padrao);
+    font-weight: bold;
+}
+.col1 p{
+    color: white;
+    font-family: var(--font-padrao);
+}
+.col1-1{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.col2{
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    margin-top: -2rem;
+}
+
+.col2 h4{
+    color: white;
+    font-family: var(--font-padrao);
+    font-weight: bold;
+}
+
+
+.col2 a{
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-padrao);
+}
+
+.col2 a:hover{
+    color: var(--cor-principal);
+    transition: 1.5s;
+}
+
+.footer .imageFooter{
+    width: 100px;
+    height: 100px;
+}
+
+.footer .imageFooter img{
+    width: 100%;
+}
+
+.king{
+    margin-top: 2rem;
+}
+.king h4{
+    color: white;
+    font-family: var(--font-padrao);
+    font-weight: bold;
+}
+
+.king p{
+    color: white;
+    font-family: var(--font-padrao);
+}
+
+.footer .imageKing{
+    width: 90px;
+    height: 90px;
+}
+
+.footer .imageKing img{
+    width: 100%;
+}
+
+/*Fim footer*/
+
+/* INICIO Copyright */
+.direitos{
+    background-color: #161616;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.direitos a{
+    color: white;
+    text-decoration: none;
+}
+.direitos span{
+    color: rgb(255, 208, 0);
+}
+
+/* FIM Copyright */
