@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header{
     width: 100%;
     height: 100vh;
@@ -107,6 +111,7 @@ header{
     font-size: 3rem;
     color: rgb(255, 255, 255);
     cursor: pointer;
+    rotate: 90deg;
     z-index: 3; /* Fica acima de todos os elementos */
     animation: move 1.1s infinite ease-in-out;
 }
@@ -243,7 +248,7 @@ header{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .imagePlano1{
@@ -305,13 +310,11 @@ header{
 
 .textPlano2{
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-left: 30rem;
 }
 
 .imagePlano2{
-    width: 50%;
+    width: 50%;   
 }
 
 .imagePlano2 img{
@@ -327,7 +330,7 @@ header{
 
 .textPlano2 p{
     font-family: var(--font-padrao);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: black;
 }
 
@@ -351,7 +354,6 @@ header{
 .textPlano2 button{
     margin: 1rem 2rem;
 }
-
 /*FIM Plano2*/
 
 /*INICIO Plano3*/
@@ -360,7 +362,7 @@ header{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .imagePlano3{
@@ -418,20 +420,17 @@ header{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    padding: 2rem;
 }
 
 .textPlano4{
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-left: 30rem;
 }
 
 .imagePlano4{
-    width: 50%;
-    display: flex;
-    
+    width: 50%;   
 }
 
 .imagePlano4 img{
@@ -447,7 +446,7 @@ header{
 
 .textPlano4 p{
     font-family: var(--font-padrao);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: black;
 }
 
@@ -542,6 +541,7 @@ header{
 .footer{
     background-color: #79797a;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 2rem 3rem;
@@ -639,6 +639,13 @@ header{
     width: 100%;
 }
 
+.licenciado a{
+    color: white;
+}
+.licenciado a:hover{
+    color: var(--cor-principal);
+    transition: 1s;
+}
 /*Fim footer*/
 
 /* INICIO Copyright */
@@ -654,7 +661,23 @@ header{
 }
 
 /* FIM Copyright */
+
+@media screen and (max-width:1610px){
+    .textPlano2{
+        margin-left: 20rem;
+    }
+    .textPlano4{
+        margin-left: 20rem;
+    }
+}
+
 @media screen and (max-width:1280px){
+    .textPlano2{
+        margin-left: 10rem;
+    }
+    .textPlano4{
+        margin-left: 10rem;
+    }
     .content h2{
         font-size: 2rem;
     }
@@ -668,5 +691,92 @@ header{
     }
     .bloco2 p{
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:860px){
+    .content h2{
+        font-size: 1.9rem;
+    }
+    .start{
+        flex-direction: column;
+    }
+    .plano1{
+        flex-direction: column;
+        padding: 4rem 0;
+    }
+    .textPlano1 button{
+        margin: 2rem;
+    }
+    .plano2{
+        flex-direction: column-reverse;
+    }
+    .textPlano2{
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+    .textPlano2 button{
+        margin: 2rem;
+    }
+    .plano3{
+        flex-direction: column;
+        padding: 3rem 0;
+    }
+    .imagePlano3{
+        width: 40%;
+    }
+    .textPlano3 {
+       width: 60%;
+    }
+    .textPlano3 button{
+        margin: 2rem;
+    }
+    .plano4{
+        flex-direction: column-reverse;
+    }
+    .textPlano4{
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+    .info{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .bloco1{
+        margin: 1rem 0 ;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .itens{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .col1{
+        margin-left: 4rem;
+    }
+    .col2{
+        margin-left: -3rem;
+    }
+}
+
+@media screen and (max-width:400px){
+    .textPlano1 button{
+        padding: 0rem .5rem;
+    }
+    .textPlano2 button{
+        padding: 0rem .5rem;
+    }
+    .imagePlano3{
+        width: 35%;
+    }
+    .textPlano3{
+        width: 65%;
+    }
+    .textPlano3 button{
+        padding: 0rem .5rem;
+    }
+    .textPlano4 button{
+        padding: 0rem .5rem;
     }
 }

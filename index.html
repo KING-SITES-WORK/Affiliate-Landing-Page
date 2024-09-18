@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-      <div class="slider">
+      <div class="slider" id="slider">
         <div class="slides">
           <!--radio buttons-->
           <input type="radio" name="radio-btn" id="radio1">
@@ -64,11 +64,13 @@
           <label for="radio4" class="manual-btn"></label>
         </div>
         <!-- Seta que fica no canto do slider -->
-          <div class="arrow"><i class="bi bi-chevron-compact-down"></div>
+          <a href="#start">
+            <div class="arrow">&rang;</div>
+          </a>
       </div>
     </header>
 
-    <section class="start">
+    <section class="start" id="start">
       <div class="box">
         <div class="image"><img src="img/familia.png" alt="símbolo de familia"></div>
         <h4>Para toda família</h4>
@@ -86,25 +88,29 @@
       </div>
     </section>
 
-    <section class="plano1">
+    <section class="plano1" id="plano1">
       <div class="imagePlano1"> 
         <img src="img/olha-esse-celular-mulher-feliz-e-satisfeita-pisca-os-olhos-aponta-com-o-dedo-indicador-para-uma-tela-em-branco-mostra-um-dispositivo-moderno.png" alt="mulher com celular">
       </div>
       <div class="textPlano1">
         <h3>ASSINATURA INDIVIDUAL</h3>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <p>Assinatura válida para uma pessoa</p>
 
         <div class="descricao">
           <i class="bi bi-check-circle"></i>
-          <p>Lorem ipsum dolor sit amet, conse</p>
+          <p>Consultas médicas 24h com clínico geral</p>
         </div>
         <div class="descricao">
           <i class="bi bi-check-circle"></i>
-          <p>Lorem ipsum dolor sit amet, conse</p>
+          <p>Sem limite de idade</p>
         </div>
         <div class="descricao">
           <i class="bi bi-check-circle"></i>
-          <p>Lorem ipsum dolor sit amet, conse</p>
+          <p>Sem limite de uso</p>
+        </div>
+        <div class="descricao">
+          <i class="bi bi-check-circle"></i>
+          <p>Acesso total ao clube</p>
         </div>
         <h2>Por R$22,50</h2>
         <a href="https://medicoagora.com/user-6m308pcx" target="_blank"><button class="btn-saiba-mais">Saiba Mais</button></a>
@@ -114,19 +120,19 @@
     <section class="plano2">
       <div class="textPlano2">
         <h3>ASSINATURA FAMÍLIA</h3>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <p>Válido para você e mais 3 dependentes</p>
 
         <div class="descricao2">
           <i class="bi bi-check-circle"></i>
-          <p>Lorem ipsum dolor sit amet, conse</p>
+          <p>Consultas 24h com clínico geral</p>
         </div>
         <div class="descricao2">
           <i class="bi bi-check-circle"></i>
-          <p>Lorem ipsum dolor sit amet, conse</p>
+          <p>Sem limite de uso</p>
         </div>
         <div class="descricao2">
           <i class="bi bi-check-circle"></i>
-          <p>Lorem ipsum dolor sit amet, conse</p>
+          <p>Atendimento para todas as idades</p>
         </div>
         <h2>Por R$39,90</h2>
         <a href="https://medicoagora.com/user-6m308pcx" target="_blank"><button class="btn-saiba-mais">Saiba Mais</button></a>
@@ -142,26 +148,26 @@
       </div>
       <div class="textPlano3">
         <h3>PLANO TOP INDIVIDUAL</h3>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <p>Assinatura individual válida para uma pessoa</p>
         <div class="descricao3">
           <i class="bi bi-check-circle"></i>
-          <p>Lorem ipsum dolor sit amet, conse</p>
+          <p>Benéfico da Assinatura individual +</p>
         </div>
         <div class="descricao3">
           <i class="bi bi-check-circle"></i>
-          <p>Lorem ipsum dolor sit amet, conse</p>
+          <p>Cardiologia, Dermatologia, Endocrino</p>
         </div>
         <div class="descricao3">
           <i class="bi bi-check-circle"></i>
-          <p>Lorem ipsum dolor sit amet, conse</p>
+          <p>Geriatra, Ginecologia, Neurologia</p>
         </div>
         <div class="descricao3">
           <i class="bi bi-check-circle"></i>
-          <p>Lorem ipsum dolor sit amet, conse</p>
+          <p>Psiquiatria, Traumatologia, Otorrino</p>
         </div>
         <div class="descricao3">
           <i class="bi bi-check-circle"></i>
-          <p>Lorem ipsum dolor sit amet, conse</p>
+          <p>Urologia, Nutrição e Pediatria</p>
         </div>
         <h2>Por R$42,50</h2>
         <a href="https://medicoagora.com/user-6m308pcx" target="_blank"><button class="btn-saiba-mais">Saiba Mais</button></a>
@@ -170,28 +176,28 @@
 
     <section class="plano4">
       <div class="textPlano4">
-        <h3>ASSINATURA FAMÍLIA</h3>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <h3>ASSINATURA TOP FAMÍLIA</h3>
+        <p>Válido para você e mais 3 dependentes</p>
 
         <div class="descricao4">
           <i class="bi bi-check-circle"></i>
-          <p>Lorem ipsum dolor sit amet, conse</p>
+          <p>Benéficios da plano Família +</p>
         </div>
         <div class="descricao4">
           <i class="bi bi-check-circle"></i>
-          <p>Lorem ipsum dolor sit amet, conse</p>
+          <p>Cardiologia, Dermatologia, Endocrino</p>
         </div>
         <div class="descricao4">
           <i class="bi bi-check-circle"></i>
-          <p>Lorem ipsum dolor sit amet, conse</p>
+          <p>Geriatra, Ginecologia, Neurologia</p>
         </div>
         <div class="descricao4">
           <i class="bi bi-check-circle"></i>
-          <p>Lorem ipsum dolor sit amet, conse</p>
+          <p>Psiquiatria, Traumatologia, Otorrino</p>
         </div>
         <div class="descricao4">
           <i class="bi bi-check-circle"></i>
-          <p>Lorem ipsum dolor sit amet, conse</p>
+          <p>Urologia, Nutrição e Pediatria</p>
         </div>
         <h2>Por R$79,90</h2>
         <a href="https://medicoagora.com/user-6m308pcx" target="_blank"><button class="btn-saiba-mais">Saiba Mais</button></a>
@@ -235,7 +241,7 @@
                 <p>tiagolimas27@gmail.com</p>
                 <a href="https://wa.me/5571991989767?text=%22Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20!" target="_blank">+55(71)99198-9767</a>
               </div>
-              <div class="imageFooter" style="margin-top: -1rem;"><img src="img/logoTiago(branco).png" alt=""></div>
+              <div class="imageFooter" style="margin-top: -1rem;"><a href="#slider"><img src="img/logoTiago(branco).png" alt="logo Tiago"></a></div>
           </div>
         </div>
         <div class="col2">
@@ -249,9 +255,12 @@
             <p>Empresa King Site Work</p>
           </div>
           <div class="imageKing">
-            <img src="img/logo_nova-Photoroom.png" alt="">
+            <a href="https://kingsiteswork.com.br/" target="_blank"><img src="img/logo_nova-Photoroom.png" alt="Logo King"></a>
           </div>
         </div>
+      </div>
+      <div class="licenciado">
+        <p>Torne-se você também um licenciado! <a href="https://medicoagora.com/rendaextra/user-6m308pcx" target="_blank">Clique aqui</a></p>
       </div>
     </footer>
     <div class="direitos">
