@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.politica{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    padding-top: 8rem;
+    gap: .8rem;
+    max-width: 800px;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #232324;
+    font-weight: bold;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #363636;
+    text-align: justify;
+    text-indent: 10px;
+}
+
+a{
+    color: #232324;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:820px){
+    .politica{
+        padding: 8rem 1rem;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .politica p{
+        font-size: 14px;
+    }
+}
