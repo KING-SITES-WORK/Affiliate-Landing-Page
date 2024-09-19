@@ -17,6 +17,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 
 html {
     scroll-behavior: smooth;
@@ -72,9 +75,9 @@ header{
 .content h2 {
     font-size: 2.8rem;
     margin-bottom: 50px;
-    font-family: var(--font-destaque);
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    text-shadow: 1px 1px 1px rgba(241, 238, 238, 0.089);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.089);
 }
 .content a{
     color: white;
@@ -82,7 +85,7 @@ header{
 }
 
 .btn-saiba-mais {
-    padding: 5px 30px;
+    padding: 8px 30px;
     font-size: 1.3rem;
     font-weight: bolder;
     font-family: var(--font-padrao);
@@ -242,7 +245,7 @@ header{
 /*Fim Section Start*/
 
 
-/*INICIO Plano1*/
+/*INICIO versão 1*/
 .plano1{
     background-color: var(--cor-fundo-claro);
     display: flex;
@@ -256,6 +259,7 @@ header{
 }
 .imagePlano1 img{
     width: 100%;
+    height: 100%;
 }
 
 .textPlano1{
@@ -296,10 +300,10 @@ header{
     margin: 1rem 2rem;
 }
 
-/*FIM  Plano1*/
+/*FIM versão1*/
 
 
-/*INICIO Plano2*/
+/*INICIO versão2*/
 
 .plano2{
     display: flex;
@@ -354,124 +358,7 @@ header{
 .textPlano2 button{
     margin: 1rem 2rem;
 }
-/*FIM Plano2*/
-
-/*INICIO Plano3*/
-.plano3{
-    background-color: var(--cor-fundo-claro);
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.imagePlano3{
-    width: 50%;
-}
-.imagePlano3 img{
-    width: 100%;
-}
-
-.textPlano3{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-.textPlano3 h3{
-    font-family: var(--font-padrao);
-    font-weight: bolder;
-    margin: 2rem;
-    color: var(--cor-principal);
-}
-
-.textPlano3 p{
-    font-family: var(--font-padrao);
-    font-size: 1.2rem;
-    color: black;
-}
-
-.descricao3{
-    display: flex;
-    align-items: normal;
-    justify-items: center;
-    gap: 1rem;
-}
-.descricao3 i{
-    color: var(--cor-principal);
-} 
-
-.textPlano3 h2{
-    color: var(--cor-principal);
-    font-family: var(--font-destaque);
-    font-weight: bolder;
-    margin: 0 2rem;
-}
-
-.textPlano3 button{
-    margin: 1rem 2rem;
-}
-/*FIM Plano3*/
-
-
-/*INICIO Plano4*/
-
-.plano4{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-}
-
-.textPlano4{
-    width: 50%;
-    margin-left: 30rem;
-}
-
-.imagePlano4{
-    width: 50%;   
-}
-
-.imagePlano4 img{
-    width: 100%;
-}
-
-.textPlano4 h3{
-    font-family: var(--font-padrao);
-    font-weight: bolder;
-    margin: 2rem;
-    color: var(--cor-principal);
-}
-
-.textPlano4 p{
-    font-family: var(--font-padrao);
-    font-size: 1.1rem;
-    color: black;
-}
-
-.descricao4{
-    display: flex;
-    align-items: normal;
-    justify-items: center;
-    gap: 1rem;
-}
-.descricao4 i{
-    color: var(--cor-principal);
-} 
-
-.textPlano4 h2{
-    color: var(--cor-principal);
-    font-family: var(--font-destaque);
-    font-weight: bolder;
-    margin: 0 2rem;
-}
-
-.textPlano4 button{
-    margin: 1rem 2rem;
-}
-
-/*FIM Plano4*/
+/*FIM Versão2*/
 
 /*INICIO Info*/
 .info{
@@ -616,27 +503,13 @@ header{
 .footer .imageFooter img{
     width: 100%;
 }
-
-.king h4{
-    color: white;
-    font-family: var(--font-padrao);
-    font-weight: bold;
-}
-
-.king p{
-    color: white;
-    font-family: var(--font-padrao);
-}
-
-.footer .imageKing{
+.licenciado h4{
     display: flex;
     align-items: center;
-    width: 70px;
-    height: 70px;
-}
-
-.footer .imageKing img{
-    width: 100%;
+    margin-top: -4rem;
+    color: white;
+    font-family: var(--font-padrao);
+    font-weight: normal;
 }
 
 .licenciado a{
@@ -694,7 +567,7 @@ header{
     }
 }
 
-@media screen and (max-width:860px){
+@media (max-width:860px){
     .content h2{
         font-size: 1.9rem;
     }
@@ -704,46 +577,48 @@ header{
     .plano1{
         flex-direction: column;
         padding: 4rem 0;
+        width: 100%;
+        height: 100%;
+    }
+    .textPlano1{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-left: 60%;
     }
     .textPlano1 button{
         margin: 2rem;
     }
+    .imagePlano1{
+        height: 50%;
+        width: 100%;
+    }
     .plano2{
         flex-direction: column-reverse;
+        padding: 4rem 0;
+        width: 100%;
+        height: 100%;
     }
     .textPlano2{
-        margin-left: 2rem;
-        margin-bottom: 1rem;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-left: 60%;
     }
     .textPlano2 button{
         margin: 2rem;
     }
-    .plano3{
-        flex-direction: column;
-        padding: 3rem 0;
-    }
-    .imagePlano3{
-        width: 40%;
-    }
-    .textPlano3 {
-       width: 60%;
-    }
-    .textPlano3 button{
-        margin: 2rem;
-    }
-    .plano4{
-        flex-direction: column-reverse;
-    }
-    .textPlano4{
-        margin-left: 2rem;
-        margin-bottom: 1rem;
-    }
     .info{
         flex-direction: column;
-        padding: 1rem;
+        padding: 3rem;
     }
     .bloco1{
-        margin: 1rem 0 ;
+        align-items: center;
+        margin-bottom: 2rem;
     }
     .footer{
         flex-direction: column;
@@ -754,29 +629,64 @@ header{
     }
     .col1{
         margin-left: 4rem;
+        margin-bottom: 2rem;
+    }
+    .licenciado{
+        margin: 2rem 0;
     }
     .col2{
         margin-left: -3rem;
     }
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:480px){
+    .plano1{
+        flex-direction: column;
+        padding: 4rem 0;
+        width: 100%;
+        height: 100%;
+    }
+    .textPlano1{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-left: 0;
+        padding-left: 0;
+    }
     .textPlano1 button{
-        padding: 0rem .5rem;
+        margin: 2rem;
+    }
+    .imagePlano1{
+        height: 50%;
+        width: 100%;
+    }
+    .plano2{
+        flex-direction: column-reverse;
+        padding: 4rem 0;
+        width: 100%;
+        height: 100%;
+    }
+    .textPlano2{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-left: 0;
     }
     .textPlano2 button{
-        padding: 0rem .5rem;
+        margin: 2rem;
     }
-    .imagePlano3{
-        width: 35%;
+    .info{
+        padding: 3rem 0;
+        width: 100%;
     }
-    .textPlano3{
-        width: 65%;
-    }
-    .textPlano3 button{
-        padding: 0rem .5rem;
-    }
-    .textPlano4 button{
-        padding: 0rem .5rem;
+    .footer .licenciado h4{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-left: 2rem;
     }
 }
