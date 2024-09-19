@@ -648,11 +648,11 @@ header{
     }
     .textPlano1{
         height: 50%;
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         align-items: baseline;
-        margin-left: 0;
+        margin-left: -3rem;
         padding-left: 0;
     }
     .textPlano1 button{
