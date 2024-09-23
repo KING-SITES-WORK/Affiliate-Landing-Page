@@ -114,7 +114,7 @@ header{
     font-size: 3rem;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    rotate: 90deg;
+    font-size: 40px;
     z-index: 3; /* Fica acima de todos os elementos */
     animation: move 1.1s infinite ease-in-out;
 }
