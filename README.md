@@ -8,4 +8,4 @@
   <li>Whatsapp fornecido pelo cliente</li>
   <li>Nenhuma coleta de dados de usuário</li>
 </ul>
-<p>Site simples, desenvolvido com apenas uma tela principal e uma tela designada a política de provacidade!</p>
+<p>Site simples, desenvolvido com apenas uma tela principal e uma tela designada a política de privacidade!</p>
